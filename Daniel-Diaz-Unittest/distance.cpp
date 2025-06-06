@@ -44,7 +44,7 @@ struct PointDistanceComp{
 };
 
 
-class DistanceTest : public ::testing::TestWithParam<PointDistanceComp> {
+struct DistanceTest : public ::testing::TestWithParam<PointDistanceComp> {
 protected:
   const ld EPS = 1e-5;
 };
